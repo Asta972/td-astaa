@@ -1,0 +1,71 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    outline: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+p {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Bouton Retour Menu */
+#retourMenu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #d35400;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#retourMenu:hover {
+    background-color: #a84300;
+}
+/* Styles pour le fond vidéo */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que la vidéo couvre tout l'écran */
+    z-index: -1; /* La vidéo se place derrière tout le contenu */
+}
